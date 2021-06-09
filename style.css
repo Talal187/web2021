@@ -1,0 +1,199 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #330127;
+}
+.container{
+    position: absolute;
+    height: 490px;
+    width: 350px;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+.design{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(to top left, rgba(33, 55, 253, 0.7), rgba(122, 23, 253, 0.7));
+    top: -90px;
+    left: -70px;
+    box-shadow: 130px -20px 0 -16px rgba(23, 165, 200, 0.6),
+                205px -40px 0 -18px rgba(33, 115, 223, 0.6);
+}
+.design:before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(to top right, rgba(33, 66, 253, 0.7), rgba(122, 23, 253, 0.7));
+    top: 510px;
+    right: -190px;
+    box-shadow: -70px 10px 0 -14px rgba(23, 150, 200, 0.6),
+    -130px 30px 0 -18px rgba(73, 104, 133, 0.6);
+}
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.35em 0;
+}
+.username, .email, .password{
+    position: relative;
+    top: -5px;
+    text-align: center;
+    margin: 12px 0;
+    height: 48px;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: 3px solid #777;
+    font-size: 1.3em;
+    outline: none;
+    color: royalblue;
+    height: 73%;
+    margin-top: 3px;
+    background: transparent;
+}
+input:focus{
+    border-image: linear-gradient(to left, #4169e1, #4169e1);
+    border-image-slice: 1;
+    color: #777;
+}
+::placeholder{
+    color: #888;
+    transition: 0.7s;
+}
+input:focus::placeholder{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.fa-user, .fa-envelope, .fa-lock{
+    position: relative;
+    font-size: 1.3em;
+    color: #9a711a;
+    left: -7px;
+    top: 3px;
+}
+input[type="submit"]{
+    position: absolute;
+    width: 140px;
+    height: 45px;
+    background: linear-gradient(to right, rgb(203, 87, 33), #6617CB);
+    left: 0;
+    right: 0;
+    margin: 0px auto 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding: 8px 0;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-size: 140%;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-position: 140px;
+}
+h5{
+    position: relative;
+    text-align: center;
+    color: #777;
+    top: 45px;
+}
+.social{
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+.fa-facebook, .fa-twitter, .fa-google-plus{
+    border: 2px solid #777;
+    border-radius: 50%;
+    color: #777;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    margin-left: 7px;
+    transition: 0.5s;
+}
+.fa-google-plus{
+    padding: 6px 4px;
+}
+.fa-facebook:hover{
+    color: #fff;
+    background: #3C4AB9;
+    border-color: #3C4AB9;
+}
+.fa-twitter:hover{
+    color: #fff;
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+.fa-google-plus:hover{
+    color: #fff;
+    background: #DD4B39;
+    border-color: #DD4B39;
+}
+hr{
+    position: relative;
+    top: -45px;
+    background: #fff;
+    width: 0;
+    height: 5px;
+    animation: anim 2s forwards linear;
+    border: none;
+}
+@keyframes anim{
+    100%{width: 130px;}
+}
+input[type='checkbox']{
+    position: absolute;
+    height: 10px;
+    width: 33px;
+    top: 3%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    background: #ebebeb;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.4s;
+}
+input[type='checkbox']:before{
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    top: -3px;
+    left: -1px;
+    outline: none;
+    box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.5s;
+}
+input[type='checkbox']:checked{
+    background-color: #555;
+}
+input[type='checkbox']:checked::before{
+    transform: translateX(17px);
+    background: linear-gradient(to right, rgb(33, 166, 219), #6617DB);
+}
